@@ -1,0 +1,12 @@
+.env
+
+/terraform/state
+credentials
+
+.venv/
+.env
+*.tfstate*
+.terraform/
+# *.json   # only if it would catch service account keys; otherwise use a narrower pattern
+function-source.zip
+*-sa.json
