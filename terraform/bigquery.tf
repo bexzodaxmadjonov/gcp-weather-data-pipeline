@@ -7,7 +7,7 @@ resource "google_bigquery_dataset" "weather" {
 resource "google_bigquery_table" "gold" {
   dataset_id          = google_bigquery_dataset.weather.dataset_id
   table_id            = "weather_realtime_gold"
-  deletion_protection = true
+  deletion_protection = false
   labels              = local.labels
 
   time_partitioning {

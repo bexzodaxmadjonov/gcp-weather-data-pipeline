@@ -12,4 +12,9 @@ terraform {
       version = "~> 2.4"
     }
   }
+
+  backend "gcs" {
+    bucket = "cloud-practice-510608-tfstate"
+    prefix = "terraform/state"
+  }
 }
