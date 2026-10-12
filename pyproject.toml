@@ -1,0 +1,30 @@
+[project]
+name = "clouds-practice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "bexzodaxmadjonov", email = "bexzodaxmadjonovx@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "functions-framework>=3.10.2",
+    "google-cloud-bigquery>=3.46.1",
+    "google-cloud-secret-manager>=2.31.0",
+    "google-cloud-storage>=3.17.0",
+    "pandas>=3.0.6",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+clouds-practice = "clouds_practice:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
